@@ -2,12 +2,12 @@
 
 echo  $DB_SERVER
 echo  $DB_PORT
-echo  $DB_USERNAME
+#echo  $DB_USERNAME
 echo  $DATABASE_NAME
-echo  $DB_PASSWORD
+#echo  $DB_PASSWORD
 echo  $EMAIL_USER
-echo  $EMAIL_PASS
-echo  $SECRET_KEY
+#echo  $EMAIL_PASS
+#echo  $SECRET_KEY
 echo  $SQLALCHEMY_TRACK_MODIFICATIONS
 echo  $MAIL_SERVER
 echo  $MAIL_PORT
