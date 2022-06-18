@@ -16,6 +16,12 @@ echo  $FLASK_APP
 
 ls -lrt
 
+if [ ! -f flaskblog/static/main.css ]
+then
+  echo 'Copying static files...' 
+  cp -r static/* flaskblog/static/
+fi
+
 mkdir -p /app/logs/
 touch /app/logs/gunicorn.log
 
