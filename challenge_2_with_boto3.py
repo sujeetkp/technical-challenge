@@ -1,11 +1,9 @@
 import boto3
 import json
 
-#instance_id = input("Enter Instance ID: ")
-#attribute = input("Enter Attribute path in Slash separated: ")
+instance_id = input("Enter Instance ID: ")
 
-instance_id = 'i-0d860c15f9cac2ef0'
-attribute = 'Placement/AvailabilityZone'
+#instance_id = 'i-0d860c15f9cac2ef0'
 
 client = boto3.client('ec2')
 
@@ -23,7 +21,14 @@ response = client.describe_instances(
     ]
 )
 
-#print(json.dumps(response, indent=2, default=str))
+# Print in JSON
+print(json.dumps(response, indent=2, default=str))
+
+##########################
+
+attribute = input("Enter Attribute path as slash separated: ")
+
+#attribute = 'Placement/AvailabilityZone'
 
 keys = attribute.split('/')
 value = f'''response['Reservations'][0]['Instances'][0]'''

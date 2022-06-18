@@ -23,6 +23,8 @@ get_value(){
 
 #object='{"a":{"b":{"c":"d"}}}'
 #key='a/b/c'
+#object='{"a":{"b":{"c":"d","e":"f"}}}'
+#key='a/b/c'
 
 get_value $object $key
 
