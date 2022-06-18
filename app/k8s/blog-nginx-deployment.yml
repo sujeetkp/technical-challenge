@@ -16,6 +16,7 @@ spec:
       containers:
       - name: blog-nginx
         image: sujeetkp/blog-nginx:1.0
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "128M"
