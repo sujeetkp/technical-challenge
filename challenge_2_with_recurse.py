@@ -1,5 +1,6 @@
 import requests
 import json
+from nested_lookup import nested_lookup
 
 metadata_url = "http://169.254.169.254/latest/meta-data/"
 #metadata_url = "http://169.254.169.254/latest/meta-data/block-device-mapping/"
@@ -29,3 +30,6 @@ def Get_JSON_Metadata(url):
 
 output_json = Get_JSON_Metadata(metadata_url)
 print(json.dumps(output_json, indent=2, default=str, sort_keys=True))
+
+key = input('Enter your key: ')
+print(nested_lookup(key, output_json))
