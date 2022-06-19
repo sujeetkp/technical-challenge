@@ -1,0 +1,9 @@
+department="IT"
+environment="dev"
+location="East US"
+resource_group_name="database_rg"
+db_server_name_prefix = "test"
+postgre_sku_name="GP_Gen5_4"
+db_size=640000
+postgres_version="11"
+database_name="guest"
