@@ -1,2 +1,4 @@
-*/azure.json
-*/env.sh
+azure.json
+env.sh
+secrets.tfvars*
+.DS_Store
