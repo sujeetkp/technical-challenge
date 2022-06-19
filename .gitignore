@@ -1,4 +1,4 @@
 azure.json
 env.sh
-secrets.tfvars*
+secrets.tfvars
 .DS_Store
