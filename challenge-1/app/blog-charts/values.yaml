@@ -100,9 +100,9 @@ inputs:
     secretName: letsencrypt-production-private-key
   ingress:
     name: ingress-service
-    secretName: app-simplifydev-xyz
+    secretName: web-simplifydev-xyz
     tlsHosts:
-      - app.simplifydev.xyz
+      - web.simplifydev.xyz
     annotations:
       ingressClass: nginx                      
       sslRedirect: "True"        
