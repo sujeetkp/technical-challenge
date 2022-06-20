@@ -19,7 +19,7 @@ def Get_JSON_Metadata(url):
             temp_url = url + metadata
             temp.update(Get_JSON_Metadata(temp_url))
         temp_output[url.rsplit('/')[-2]] = temp
-    elif('{' in response):
+    elif(response.startswith('{') and response.endswith('}')):
         temp_output[url.rsplit('/')[-1]] = json.loads(response)
     else:
         temp_output[url.rsplit('/')[-1]] = response
